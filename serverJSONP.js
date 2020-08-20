@@ -9,7 +9,7 @@ app.get('/list',(req,res)=>{
     let { callback = Function.prototype } = req.query;
     let data = {
         code:0,
-        message:'珠峰培训'
+        message:'珠峰培训呀'
     };
     res.send(`${callback}(${JSON.stringify(data)})`);
 });
